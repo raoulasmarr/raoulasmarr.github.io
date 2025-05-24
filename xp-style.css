@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .experience-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007acc;
+  }
+  
+  .intro {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-item {
+    margin-bottom: 2rem;
+  }
+  
+  .experience-item h2 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .experience-item p {
+    margin: 0;
+    line-height: 1.6;
+  }
