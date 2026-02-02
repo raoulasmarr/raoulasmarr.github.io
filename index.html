@@ -1,192 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raoul Asmar | Computer Science Student</title>
+    <meta name="description" content="Raoul Asmar — Computer Science student building systems-focused projects in C, Python, and JavaScript. View skills, projects, and contact." />
+    <meta name="theme-color" content="#0b0f19" />
 
-    <meta name="description" content="Raoul Asmar — Computer Science student building practical web and software projects. View experience, projects, and contact details." />
-
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-   <header class="header">
-    <a href="#home" class="logo">Raoul</a>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="logo">Raoul Asmar</a>
 
-    <nav class="navbar" aria-label="Primary">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+        <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="navbar" aria-label="Primary">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
             <a href="RaoulAsmar_Resume.pdf" target="_blank" rel="noopener" class="nav-resume">Resume</a>
-    </nav>
+        </nav>
 
-    <a href="#contact" class="contact">Contact Me</a>
-   </header>
-
-   <main>
-    <!-- HOME -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, I’m</h3>
-
-            <h1><span>Raoul Asmar</span></h1>
-
-            <p>
-                Computer Science student who builds clean, reliable software and modern web experiences.
-                I’m actively looking for internship opportunities and freelance work.
-            </p>
-
-            <div class="btn-box">
-                <a class="btn-1" href="#contact">Let’s work together</a>
-                <a href="RaoulAsmar_Resume.pdf" target="_blank" rel="noopener" class="btn-2">View Resume</a>
-            </div>
+        <div class="social" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/raoul-asmar/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://github.com/raoulasmarr" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="bx bxl-github"></i>
+            </a>
         </div>
 
-        <div class="img-box">
-            <img src="Screenshot 2025-01-21 at 17.53.59.jpeg" alt="Portrait of Raoul Asmar" loading="lazy">
-        </div>
-    </section>
+        <a href="#contact" class="contact">Contact Me</a>
+    </header>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="Screenshot 2025-01-21 at 17.53.59.jpeg" alt="Raoul Asmar headshot" loading="lazy">
-        </div>
+    <main>
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, I’m</h3>
+                <h1><span>Raoul Asmar</span></h1>
 
-        <div class="about-content">
-            <h2 class="heading">About</h2>
-            <h3>Computer Science <span>Student</span></h3>
+                <p>
+                    Computer Science student at the University of Oregon focused on backend and systems fundamentals.
+                    I build projects in C, Python, and JavaScript with an emphasis on correctness, clean structure, and real-world behavior.
+                </p>
 
-            <p>
-                I’m a CS student at the University of Oregon with a strong foundation in C, data structures, and web development.
-                I care about writing code that’s readable, testable, and user-focused.
-            </p>
-
-            <p>
-                I’m especially interested in backend development and building tools that help people stay organized and productive.
-            </p>
-
-            <a href="#experience" class="btn-2">See Experience</a>
-        </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="experience" id="experience">
-        <h2 class="heading">Experience</h2>
-        <p class="section-subtitle">A quick snapshot of what I’ve done and what I’m building toward.</p>
-
-        <div class="experience-list">
-            <div class="experience-item">
-                <h3>Robust Network Solutions — Junior Engineering / Help Desk</h3>
-                <p class="experience-meta">San Mateo, CA • Jun 2022 – Aug 2022</p>
-                <ul>
-                    <li>Provided first-line technical support and resolved hardware/software issues to reduce downtime.</li>
-                    <li>Delivered remote and on-site troubleshooting and assisted with installations/configurations.</li>
-                    <li>Maintained clear ticket documentation and improved support workflows.</li>
-                </ul>
+                <div class="btn-box">
+                    <a class="btn-1" href="#projects">See Projects</a>
+                    <a href="RaoulAsmar_Resume.pdf" target="_blank" rel="noopener" class="btn-2">View Resume</a>
+                </div>
             </div>
 
-            <div class="experience-item">
-                <h3>Intro to Programming (C &amp; Python) — Fall 2024</h3>
-                <p class="experience-meta">University coursework</p>
-                <p>Built a strong foundation in core programming concepts through labs and projects.</p>
+            <div class="img-box">
+                <img src="Screenshot 2025-01-21 at 17.53.59.jpeg" alt="Portrait of Raoul Asmar" loading="lazy" />
             </div>
+        </section>
 
-            <div class="experience-item">
-                <h3>Hackathon — Chrome Extension for Canvas Planning</h3>
-                <p class="experience-meta">Team project</p>
-                <p>Collaborated on a Chrome extension concept that turns syllabi into a personalized daily schedule for students.</p>
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
+            <h2 class="heading">Skills</h2>
+            <p class="section-subtitle">Tools, languages, and technical areas I work with regularly.</p>
+
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML &amp; CSS</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <div class="skills-card">
+                    <h3>Core Concepts</h3>
+                    <ul>
+                        <li>Data Structures &amp; Algorithms</li>
+                        <li>Dynamic Memory Management</li>
+                        <li>File I/O &amp; Parsing</li>
+                        <li>Unix Processes (fork, exec, wait, signals)</li>
+                        <li>Complexity &amp; Asymptotic Analysis</li>
+                        <li>Computer Organization (CPU / memory basics)</li>
+                    </ul>
+                </div>
+
+                <div class="skills-card">
+                    <h3>Tools &amp; Environments</h3>
+                    <ul>
+                        <li>Git &amp; GitHub</li>
+                        <li>Linux / Unix</li>
+                        <li>Command Line</li>
+                        <li>VS Code</li>
+                        <li>Makefiles</li>
+                        <li>Chrome Extension APIs</li>
+                    </ul>
+                </div>
+
+                <div class="skills-card">
+                    <h3>Web &amp; Backend</h3>
+                    <ul>
+                        <li>Node.js &amp; Express (basics)</li>
+                        <li>React (basics)</li>
+                        <li>PostgreSQL / MySQL (basics)</li>
+                        <li>REST patterns &amp; CRUD apps</li>
+                    </ul>
+                </div>
             </div>
+        </section>
 
-            <div class="experience-item">
-                <h3>Web Development — Ongoing</h3>
-                <p class="experience-meta">Personal projects</p>
-                <p>Building responsive pages with HTML/CSS and improving JavaScript fundamentals through small projects.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS + EDUCATION -->
-    <div class="content-section">
+        <!-- PROJECTS -->
         <section class="projects" id="projects">
             <h2 class="heading">Projects</h2>
             <p class="section-subtitle">A few things I’ve built recently. More coming soon.</p>
 
             <div class="projects-grid">
                 <article class="project-card">
-                    <h3>Canvas Schedule Assistant</h3>
-                    <p>A Chrome extension concept that turns syllabi into a personalized daily plan with smart study recommendations.</p>
-                    <div class="project-links">
-                        <a href="#contact" class="btn-2">Request Repo</a>
-                        <a href="#contact" class="btn-2">Request Demo</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <h3>Hash Table Word Search</h3>
-                    <p>C program using a chained hash table to index words and return line numbers for fast searches.</p>
+                    <h3>Custom Unix Shell</h3>
+                    <p>Unix-style shell in C focused on parsing and process control.</p>
+                    <ul class="project-bullets">
+                        <li>Built command parsing and built-ins; supported background processes.</li>
+                        <li>Used fork, execvp, wait, and Unix signals to manage child processes.</li>
+                    </ul>
                     <div class="project-links">
                         <a href="#contact" class="btn-2">Request Repo</a>
                     </div>
                 </article>
 
+
                 <article class="project-card">
-                    <h3>HTTP File Server</h3>
-                    <p>Python web server that serves files and returns correct HTTP status codes based on URL patterns and file types.</p>
+                    <h3>Pomodoro Chrome Extension</h3>
+                    <p>Chrome extension that implements the Pomodoro technique with customizable sessions and notifications.</p>
+                    <ul class="project-bullets">
+                        <li>Built an event-driven timer flow with start/stop controls and persistent state.</li>
+                        <li>Used Chrome extension APIs for notifications and background behavior.</li>
+                    </ul>
                     <div class="project-links">
                         <a href="#contact" class="btn-2">Request Repo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Python HTTP File Server</h3>
+                    <p>Lightweight HTTP file server (pageserver.py) that serves files and returns correct status codes based on URL patterns and file types.</p>
+                    <ul class="project-bullets">
+                        <li>Implemented URL parsing, file type detection, and consistent error responses.</li>
+                        <li>Improved robustness with clear routing rules and predictable behavior.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#contact" class="btn-2">Request Repo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Responsive portfolio site built with HTML/CSS to showcase projects, skills, and coursework in a recruiter-friendly layout.</p>
+                    <ul class="project-bullets">
+                        <li>Designed a clean landing-page layout with reusable components and consistent styling.</li>
+                        <li>Optimized for readability, scannability, and fast navigation.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://raoulasmarr.github.io" target="_blank" rel="noopener" class="btn-2">View Live</a>
+                        <a href="https://github.com/raoulasmarr/raoulasmarr.github.io" target="_blank" rel="noopener" class="btn-2">View Code</a>
                     </div>
                 </article>
             </div>
         </section>
 
+        <!-- EDUCATION -->
         <section class="education" id="education">
             <h2 class="heading">Education</h2>
             <div class="education-card">
                 <h3>University of Oregon</h3>
                 <p>B.S. Computer Science (Expected 2027) • Minors: Business Administration, Mathematics</p>
-                <p>Relevant coursework: Data Structures, Discrete Math, Linear Algebra, Linux/C Programming</p>
+                <p class="education-meta"><strong>GPA:</strong> 3.98 • <strong>Honors:</strong> Dean’s List (multiple terms)</p>
+
+                <h4 class="mini-heading">Relevant Coursework</h4>
+                <ul class="coursework-list">
+                    <li><strong>CS 212</strong> — Computer Science III</li>
+                    <li><strong>CS 313</strong> — Intermediate Data Structures</li>
+                    <li><strong>CS 314</strong> — Computer Organization</li>
+                    <li><strong>CS 315</strong> — Intermediate Algorithms (In Progress)</li>
+                    <li><strong>CS 330</strong> — C/C++ and Unix (In Progress)</li>
+                    <li><strong>CS 322</strong> — Intro to Software Engineering</li>
+                    <li><strong>CS 399</strong> — Intro to Computer Forensics</li>
+                    <li><strong>MATH 231/232</strong> — Discrete Math I &amp; II</li>
+                    <li><strong>MATH 341</strong> — Linear Algebra</li>
+                    <li><strong>MATH 342</strong> — Linear Algebra II (In Progress)</li>
+                    <li><strong>WR 320</strong> — Scientific &amp; Technical Writing</li>
+                </ul>
             </div>
         </section>
-    </div>
 
-    <!-- CONTACT -->
-    <section class="contact-form" id="contact">
-        <h2 class="contact-me">Contact <span>me</span></h2>
-        <p class="section-subtitle">Have a role or project in mind? Send a message and I’ll get back to you.</p>
+        <!-- CONTACT -->
+        <section class="contact-form" id="contact">
+            <h2 class="contact-me">Contact <span>me</span></h2>
+            <p class="section-subtitle">Have a role or project in mind? Send a message and I’ll get back to you.</p>
 
-        <form action="#" method="post">
-            <div class="input-box">
-                <input type="text" name="fullName" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-            </div>
+            <form action="https://formsubmit.co/raoulasmar24@gmail.com" method="POST" class="contact-form-real">
+                <!-- FormSubmit config -->
+                <input type="hidden" name="_subject" value="New message from raoulasmarr.github.io" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://raoulasmarr.github.io/?sent=1#contact" />
 
-            <div class="input-box">
-                <input type="tel" name="phone" placeholder="Phone Number">
-                <input type="text" name="subject" placeholder="Subject">
-            </div>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
 
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                </div>
 
-            <input type="submit" value="Send Message" class="btn-1">
-        </form>
-    </section>
-   </main>
+                <div class="input-box">
+                    <input type="tel" name="phone" placeholder="Phone Number" />
+                    <input type="text" name="subject" placeholder="Subject" />
+                </div>
 
-   <!-- FOOTER (outside main) -->
-   <footer class="footer">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+                <input type="submit" value="Send Message" class="btn-1" />
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
         <div class="social" aria-label="Social links">
-            <a href="https://www.linkedin.com/in/raoul-asmar-2014a6210/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/raoul-asmar/" target="_blank" rel="noopener" aria-label="LinkedIn">
                 <i class="bx bxl-linkedin"></i>
             </a>
 
-            <!-- Replace # with your GitHub when ready -->
-            <a href="#" aria-label="GitHub">
+            <a href="https://github.com/raoulasmarr" target="_blank" rel="noopener" aria-label="GitHub">
                 <i class="bx bxl-github"></i>
             </a>
 
@@ -196,14 +252,26 @@
         </div>
 
         <ul class="list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
         <p class="copyright">© 2026 Raoul Asmar. All rights reserved.</p>
-   </footer>
+    </footer>
+
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const status = document.getElementById('form-status');
+            if (!status) return;
+
+            if (params.get('sent') === '1') {
+                status.textContent = "Message sent! I'll get back to you soon.";
+            }
+        })();
+    </script>
 </body>
 </html>
